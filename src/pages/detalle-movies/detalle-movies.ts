@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams,ModalController } from 'ionic-angul
 import { ApiService } from '../../app/services/api.services';
 import { SafeResourceUrl } from '@angular/platform-browser';
 import { DomSanitizer } from '@angular/platform-browser';
-import { ModalPage } from './modal-page';
+
 import { GalleryModal } from 'ionic-gallery-modal';
 
 /**
@@ -49,7 +49,6 @@ export class DetalleMoviesPage {
           this.singleMovie = a;
 
           for (var _i = 0; _i < a.genres.length; _i++) {
-                var num = a.genres[_i];
                 this.genresMovie = this.genresMovie + a.genres[_i].name + ",";
             }
           this.api.getVideo(this.selectedMovie.id).subscribe(a => {
