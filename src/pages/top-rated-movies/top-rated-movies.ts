@@ -8,8 +8,8 @@ import { GlobalVars } from '../../app/services/global';
 
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-top-rated-movies',
+  templateUrl: 'top-rated-movies.html',
 })
 
 @NgModule({
@@ -18,9 +18,10 @@ import { GlobalVars } from '../../app/services/global';
     ]
 })
 
-export class HomePage {
 
-  movies: Array<{}> = [];
+export class TopRatedMoviesPage {
+
+movies: Array<{}> = [];
   loading: LoadingController;
   title: string;
   private _page:number=2; 
@@ -41,10 +42,10 @@ export class HomePage {
             dismissOnPageChange: false
         });
         loading.present();
-        this.title = this.globalVars.NOW_PLAYING[0].title;
+        this.title = this.globalVars.TOP_RATE[0].title;
 
         // // Get Movies Now Playing
-         this.api.getMovie(this.globalVars.NOW_PLAYING[0].key).subscribe(a => {
+         this.api.getMovie(this.globalVars.TOP_RATE[0].key).subscribe(a => {
                 console.log(a);
            
                     this.movies = a.results.map(b => {
@@ -94,3 +95,4 @@ export class HomePage {
     infiniteScroll.complete();
   }
 }
+
