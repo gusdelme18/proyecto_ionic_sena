@@ -1,26 +1,24 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+Este proyecto se desarrollo con [Ionic 2](http://ionicframework.com/docs/) projects.
 
-## How to use this template
+## Se usaron los siguientes componentes
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+*Para nuestra base de datos usamos el Rest Api que nos brinda*. [The Movie DB](http://themoviedb.org).
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+en el desarrollo se uso [ionic-gallery-modal](https://www.npmjs.com/package/ionic-gallery-modal) para mostrar la galeria de imgenes en un modal
 
-### With the Ionic CLI:
+### Como usar el proyecto:
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
+use los siquientes comando:
 
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+$ git clone
+$ sudo npm install
+$ ionic serve --lab
 ```
 
-Substitute ios for android if not on a Mac.
+### Vista de la aplicación:
 
+![Vista del Home](https://raw.githubusercontent.com/gusdelme18/proyecto_ionic_sena/master/preview/image_movie.png)
+![Vista detallada de una película](https://raw.githubusercontent.com/gusdelme18/proyecto_ionic_sena/master/preview/image_movie_detalle.png)
+![Scroll en vista detallada de una peícula](https://raw.githubusercontent.com/gusdelme18/proyecto_ionic_sena/master/preview/imagen_movie_detalle_scroll.png)
+![Tabs](https://raw.githubusercontent.com/gusdelme18/proyecto_ionic_sena/master/preview/imagen_movies_tabs.png)
